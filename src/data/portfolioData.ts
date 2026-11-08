@@ -39,7 +39,7 @@ export const INITIAL_PROJECTS: Project[] = [
       'Stores prices and dates for every arrival',
       'Fast search and easy export of arrival data'
     ],
-    date: '2024 - Present'
+    date: '2025 - Present'
   },
   {
     id: 'gda-mobile-app',
@@ -55,7 +55,7 @@ export const INITIAL_PROJECTS: Project[] = [
       'Access GDA arrival records on the go',
       'Check prices and dates from mobile'
     ],
-    date: '2024 - Present'
+    date: '2025'
   },
   {
     id: 'label-maker',
@@ -74,7 +74,7 @@ export const INITIAL_PROJECTS: Project[] = [
       'Modern, easy-to-use interface',
       'Built with TypeScript'
     ],
-    date: '2024'
+    date: '2026'
   },
   {
     id: 'auto-dispatch',
@@ -131,7 +131,7 @@ export const INITIAL_PROJECTS: Project[] = [
       'Static, fast-loading company website',
       'Responsive presentation of the company'
     ],
-    date: '2024'
+    date: '2025'
   },
   {
     id: 'portage-store',
@@ -151,7 +151,7 @@ export const INITIAL_PROJECTS: Project[] = [
       'Laravel API backend with Next.js frontend',
       'Fully responsive on phones'
     ],
-    date: '2024'
+    date: '2026'
   },
   {
     id: 'card-scanner',
@@ -167,7 +167,7 @@ export const INITIAL_PROJECTS: Project[] = [
       'Automatic contact detail extraction',
       'Organized, searchable contact list'
     ],
-    date: '2024'
+    date: '2026'
   },
   {
     id: 'task-manager',
@@ -183,7 +183,7 @@ export const INITIAL_PROJECTS: Project[] = [
       'Set priorities and deadlines',
       'Track progress and completed tasks'
     ],
-    date: '2024'
+    date: '2025'
   }
 ];
 
