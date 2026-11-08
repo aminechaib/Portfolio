@@ -36,7 +36,6 @@ export interface Translations {
     mobile: string;
     aiData: string;
     database: string;
-    manageButton: string;
     liveDemo: string;
     viewDetails: string;
     githubCode: string;
@@ -145,7 +144,6 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
       mobile: 'Mobile (Flutter)',
       aiData: 'AI & Data Tools',
       database: 'Databases & Logistics',
-      manageButton: 'Manage My Links',
       liveDemo: 'Live Demo',
       viewDetails: 'View Details',
       githubCode: 'Source Code',
@@ -252,7 +250,6 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
       mobile: 'Mobile (Flutter)',
       aiData: 'IA & Analyse de Données',
       database: 'Bases de Données & Logistique',
-      manageButton: 'Gérer mes liens',
       liveDemo: 'Démo en Ligne',
       viewDetails: 'Détails du Projet',
       githubCode: 'Code Source',
@@ -359,7 +356,6 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
       mobile: 'تطبيقات الهاتف (Flutter)',
       aiData: 'الذكاء الاصطناعي والبيانات',
       database: 'قواعد البيانات واللوجستيات',
-      manageButton: 'تعديل وإضافة الروابط',
       liveDemo: 'معاينة حية',
       viewDetails: 'تفاصيل المشروع',
       githubCode: 'الكود المصدري',

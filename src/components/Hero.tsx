@@ -7,13 +7,11 @@ import { TRANSLATIONS } from '../data/translations';
 interface HeroProps {
   currentLang: SupportedLanguage;
   onOpenPdfModal: () => void;
-  onOpenManageModal: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({
   currentLang,
   onOpenPdfModal,
-  onOpenManageModal,
 }) => {
   const t = TRANSLATIONS[currentLang];
 
@@ -25,10 +23,10 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* 2-Column Split Hero */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          
+
           {/* Left Column: Typographic Hierarchy */}
           <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
-            
+
             {/* Status Kicker (unboxed text metadata, no pill badge sandwich) */}
             <div className="flex items-center gap-2 text-xs font-mono text-teal-400">
               <span className="inline-block w-2 h-2 rounded-full bg-teal-400"></span>
@@ -49,8 +47,8 @@ export const Hero: React.FC<HeroProps> = ({
                 {currentLang === 'fr'
                   ? PERSONAL_INFO.roleFr
                   : currentLang === 'ar'
-                  ? PERSONAL_INFO.roleAr
-                  : PERSONAL_INFO.title}
+                    ? PERSONAL_INFO.roleAr
+                    : PERSONAL_INFO.title}
               </p>
             </div>
 
@@ -76,15 +74,6 @@ export const Hero: React.FC<HeroProps> = ({
                 <Download className="w-4 h-4 text-teal-400" />
                 <span>{t.hero.downloadResume}</span>
               </button>
-
-              <button
-                onClick={onOpenManageModal}
-                className="inline-flex items-center gap-2 px-4 py-3 text-xs font-mono text-slate-400 hover:text-teal-300 bg-slate-900/50 border border-slate-800 rounded-lg transition-colors hover:border-slate-700"
-                title="Add or update links to your apps and repositories"
-              >
-                <Code className="w-3.5 h-3.5 text-teal-400" />
-                <span>+ {t.projects.manageButton}</span>
-              </button>
             </div>
 
             {/* Quick trust cues as clean unboxed text */}
@@ -96,7 +85,7 @@ export const Hero: React.FC<HeroProps> = ({
               <span className="text-slate-700" aria-hidden="true">·</span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-teal-400" />
-                Flutter Mobile (iOS & Android)
+                Mobile Apps (Android)
               </span>
               <span className="text-slate-700" aria-hidden="true">·</span>
               <span className="flex items-center gap-1.5">
@@ -117,9 +106,9 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="relative w-full max-w-md">
               {/* Decorative ambient glow backdrop */}
               <div className="absolute -inset-1.5 bg-gradient-to-r from-teal-500/20 to-cyan-500/10 rounded-2xl blur-xl opacity-75" />
-              
+
               <div className="relative rounded-2xl border border-slate-800 bg-slate-900/90 p-6 md:p-8 backdrop-blur-xl shadow-2xl flex flex-col items-center text-center space-y-6">
-                
+
                 {/* Logo Frame */}
                 <div className="relative group">
                   <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border-2 border-teal-500/30 p-4 shadow-xl shadow-teal-500/10 flex items-center justify-center transition-transform group-hover:scale-102">
@@ -139,7 +128,6 @@ export const Hero: React.FC<HeroProps> = ({
                 {/* Identity Summary Card */}
                 <div className="space-y-1 w-full">
                   <h3 className="text-lg font-bold text-white font-display">Amine CHAÏB</h3>
-                  <p className="text-xs text-slate-400 font-mono">SARL PIÈCES DE RECHANGE ORIGINALES</p>
                   <p className="text-xs text-teal-400/90">Database R&D · Supply Chain · Web & Mobile</p>
                 </div>
 
@@ -156,9 +144,9 @@ export const Hero: React.FC<HeroProps> = ({
                   <div className="p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 text-left">
                     <div className="flex items-center gap-1.5 text-teal-400 text-xs font-semibold">
                       <Smartphone className="w-3.5 h-3.5" />
-                      <span>Flutter App</span>
+                      <span>Android Apps</span>
                     </div>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Warehouse barcode scanner</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">GDA, card scanner & tasks</p>
                   </div>
 
                   <div className="p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 text-left">
@@ -195,7 +183,7 @@ export const Hero: React.FC<HeroProps> = ({
         {/* Full-Width Quantitative KPI Strip Below Hero Split */}
         <div className="mt-16 pt-10 border-t border-slate-800/80">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            
+
             <div className="border-l-2 border-teal-500/40 pl-4">
               <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight tabular-nums">
                 50,000+

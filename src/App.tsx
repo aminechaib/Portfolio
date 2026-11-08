@@ -11,32 +11,16 @@ import { ResumeSection } from './components/ResumeSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { ProjectModal } from './components/ProjectModal';
-import { ManageLinksModal } from './components/ManageLinksModal';
 import { PdfModal } from './components/PdfModal';
 import { QrModal } from './components/QrModal';
 import { MobileQuickBar } from './components/MobileQuickBar';
 import { INITIAL_PROJECTS } from './data/portfolioData';
 import { Project, SupportedLanguage } from './types/portfolio';
 
-const STORAGE_PROJECTS_KEY = 'amine_portfolio_projects_v2';
 const STORAGE_LANG_KEY = 'amine_portfolio_lang';
 
 export default function App() {
-  // Load saved projects or fallback to initial realistic projects
-  const [projects, setProjects] = useState<Project[]>(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_PROJECTS_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          return parsed;
-        }
-      }
-    } catch {
-      // Fallback
-    }
-    return INITIAL_PROJECTS;
-  });
+  const projects: Project[] = INITIAL_PROJECTS;
 
   // Current language state (en, fr, ar)
   const [currentLang, setCurrentLang] = useState<SupportedLanguage>(() => {
@@ -54,7 +38,6 @@ export default function App() {
   // Modal states
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
-  const [isManageModalOpen, setIsManageModalOpen] = useState(false);
   const [qrModalData, setQrModalData] = useState<{ url: string; title: string } | null>(null);
 
   // Sync language with document direction and localStorage
@@ -73,26 +56,6 @@ export default function App() {
     document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = currentLang;
   }, [currentLang]);
-
-  // Save projects to localStorage
-  const handleSaveProjects = (updatedProjects: Project[]) => {
-    setProjects(updatedProjects);
-    try {
-      localStorage.setItem(STORAGE_PROJECTS_KEY, JSON.stringify(updatedProjects));
-    } catch {
-      // ignore
-    }
-  };
-
-  // Reset to default projects
-  const handleResetDefaults = () => {
-    setProjects(INITIAL_PROJECTS);
-    try {
-      localStorage.removeItem(STORAGE_PROJECTS_KEY);
-    } catch {
-      // ignore
-    }
-  };
 
   const handleOpenContact = () => {
     const el = document.getElementById('contact');
@@ -121,7 +84,6 @@ export default function App() {
         <Hero
           currentLang={currentLang}
           onOpenPdfModal={() => setIsPdfModalOpen(true)}
-          onOpenManageModal={() => setIsManageModalOpen(true)}
         />
 
         {/* Projects & Apps Showcase */}
@@ -129,7 +91,6 @@ export default function App() {
           projects={projects}
           currentLang={currentLang}
           onSelectProject={(project) => setSelectedProject(project)}
-          onOpenManageModal={() => setIsManageModalOpen(true)}
           onOpenQrModal={handleOpenQr}
         />
 
@@ -158,15 +119,6 @@ export default function App() {
         currentLang={currentLang}
         onClose={() => setSelectedProject(null)}
         onOpenQr={handleOpenQr}
-      />
-
-      <ManageLinksModal
-        projects={projects}
-        isOpen={isManageModalOpen}
-        currentLang={currentLang}
-        onClose={() => setIsManageModalOpen(false)}
-        onSaveProjects={handleSaveProjects}
-        onResetDefaults={handleResetDefaults}
       />
 
       <PdfModal

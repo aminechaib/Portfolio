@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { ExternalLink, Github, QrCode, Info, PlusCircle, Search, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, QrCode, Info, Search } from 'lucide-react';
 import { Project, ProjectCategory, SupportedLanguage } from '../types/portfolio';
 import { TRANSLATIONS } from '../data/translations';
 
@@ -7,7 +7,6 @@ interface ProjectsSectionProps {
   projects: Project[];
   currentLang: SupportedLanguage;
   onSelectProject: (project: Project) => void;
-  onOpenManageModal: () => void;
   onOpenQrModal: (url: string, title: string) => void;
 }
 
@@ -15,7 +14,6 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   projects,
   currentLang,
   onSelectProject,
-  onOpenManageModal,
   onOpenQrModal,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>('all');
@@ -60,17 +58,6 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
             <p className="text-slate-400 mt-2 max-w-2xl text-sm sm:text-base">
               {t.projects.subtitle}
             </p>
-          </div>
-
-          {/* Manage Links Button */}
-          <div className="shrink-0 flex items-center gap-3">
-            <button
-              onClick={onOpenManageModal}
-              className="inline-flex items-center gap-2 px-4 py-2.5 text-xs font-semibold text-teal-300 bg-teal-950/60 border border-teal-500/40 hover:bg-teal-900/60 hover:border-teal-400 rounded-lg transition-all shadow-sm"
-            >
-              <PlusCircle className="w-4 h-4 text-teal-400" />
-              <span>{t.projects.manageButton}</span>
-            </button>
           </div>
         </div>
 

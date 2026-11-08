@@ -23,40 +23,113 @@ export const PERSONAL_INFO = {
 
 export const INITIAL_PROJECTS: Project[] = [
   {
-    id: 'auto-dispatch',
-    title: 'Auto Dispatch',
+    id: 'gda-web',
+    title: 'GDA — Gestion d’Arrivage',
     category: 'web',
-    categoryLabel: 'Web & Operations',
-    summary: 'Dispatch management web application for planning, assigning, and tracking deliveries in real time.',
-    description: 'A web-based dispatch platform that streamlines delivery planning and driver assignment. Centralizes orders, routes, and status updates so operations teams can coordinate shipments from a single dashboard.',
-    imageUrl: '/projects/auto-dispatch.png',
-    tags: ['Web App', 'Dispatch', 'Dashboard', 'Logistics'],
-    liveUrl: '',
+    categoryLabel: 'Web Platform',
+    summary: 'Arrival management platform that stores millions of lines and concurrent arrivals with prices and dates, plus fast checking and export.',
+    description: 'GDA (Gestion d’Arrivage) is a web platform built to manage arrival records at scale. It handles millions of lines while storing concurrent arrivals, prices, and dates. Records can be checked quickly and exported easily, making day-to-day arrival management fast and reliable.',
+    imageUrl: '/projects/gda-web.png',
+    tags: ['Web App', 'SQL', 'Data Management', 'Arrivage', 'Export'],
+    liveUrl: 'https://gda.sarlpro.com/',
     githubUrl: '',
     featured: true,
     keyFeatures: [
-      'Central dispatch dashboard for orders and driver assignment',
-      'Real-time delivery status tracking',
-      'Organized route and shipment planning'
+      'Handles millions of lines and concurrent arrivals',
+      'Stores prices and dates for every arrival',
+      'Fast search and easy export of arrival data'
+    ],
+    date: '2024 - Present'
+  },
+  {
+    id: 'gda-mobile-app',
+    title: 'GDA Mobile (Android)',
+    category: 'mobile',
+    categoryLabel: 'Android App',
+    summary: 'Dedicated Android app for GDA to check and manage arrival data from a phone.',
+    description: 'The GDA mobile app brings arrival management to Android devices. Users can access arrival records, prices, and dates on the go. Android only — no iOS version.',
+    imageUrl: '/projects/gda-mobile-app.png',
+    tags: ['Android', 'Mobile App', 'Data Management'],
+    keyFeatures: [
+      'Native Android application',
+      'Access GDA arrival records on the go',
+      'Check prices and dates from mobile'
+    ],
+    date: '2024 - Present'
+  },
+  {
+    id: 'label-maker',
+    title: 'Label Maker',
+    category: 'web',
+    categoryLabel: 'Web Tool',
+    summary: 'TypeScript web app with a modern UI for building dynamic labels from Excel data.',
+    description: 'Label Maker is a TypeScript application with a clean, modern interface for generating dynamic labels based on Excel data. Import a spreadsheet, map the fields, and produce ready-to-print labels in a few steps.',
+    imageUrl: '/projects/label-maker.png',
+    tags: ['TypeScript', 'Excel', 'Label Printing', 'Web App'],
+    liveUrl: 'https://ac-label-maker.vercel.app/',
+    githubUrl: '',
+    featured: true,
+    keyFeatures: [
+      'Dynamic labels generated from Excel data',
+      'Modern, easy-to-use interface',
+      'Built with TypeScript'
     ],
     date: '2024'
   },
   {
-    id: 'gda-web',
-    title: 'GDA Web',
-    category: 'web',
-    categoryLabel: 'Web & SaaS',
-    summary: 'Full-featured web platform for managing business operations and day-to-day workflows.',
-    description: 'GDA Web is a responsive management platform built to handle core business operations through a clean, modern interface. It brings records, workflows, and reporting together in one place.',
-    imageUrl: '/projects/gda-web.png',
-    tags: ['Web App', 'Management', 'Dashboard', 'SaaS'],
-    liveUrl: '',
+    id: 'auto-dispatch',
+    title: 'Auto Dispatch',
+    category: 'ai-data',
+    categoryLabel: 'Data & Operations',
+    summary: 'Allocates quantities and articles between clients by order variety and client rank when arrival stock cannot fulfill the global order.',
+    description: 'Auto Dispatch helps distribute quantities and articles between clients when the arrival does not have enough stock to fulfill the global order. It uses the variety of each order and the client rank to decide allocation, making shortages faster and fairer to dispatch.',
+    imageUrl: '/projects/auto-dispatch.png',
+    tags: ['Python', 'Streamlit', 'Dispatch', 'Allocation', 'Data Analysis'],
+    liveUrl: 'https://ac-partagepro.streamlit.app/',
     githubUrl: '',
     featured: true,
     keyFeatures: [
-      'Centralized business management dashboard',
-      'Responsive layout for desktop and tablet',
-      'Structured records and workflow management'
+      'Allocates quantities and articles between clients',
+      'Uses order variety and client rank for prioritization',
+      'Handles arrivals that cannot fulfill the full order'
+    ],
+    date: '2024'
+  },
+  {
+    id: 'excel-tool',
+    title: 'Excel Tool',
+    category: 'ai-data',
+    categoryLabel: 'Data Analysis',
+    summary: 'Builds pivot tables from two Excel files — orders and stock — to make manual dispatch quantities easy.',
+    description: 'Excel Tool is structured to generate a pivot table from two files, orders and stock. The resulting view makes it easy to read and manually decide dispatch quantities.',
+    imageUrl: '/projects/excel-tool.png',
+    tags: ['Python', 'Streamlit', 'Excel', 'Pivot Table', 'Data Analysis'],
+    liveUrl: 'https://ac-analyse.streamlit.app/',
+    githubUrl: '',
+    featured: false,
+    keyFeatures: [
+      'Combines orders and stock Excel files',
+      'Generates a clear pivot table',
+      'Simplifies manual dispatch quantity decisions'
+    ],
+    date: '2024'
+  },
+  {
+    id: 'sarlpro',
+    title: 'SARL PRO — Company Website',
+    category: 'web',
+    categoryLabel: 'Web & Marketing',
+    summary: 'Static single-page company website built with Vue.js to present the company.',
+    description: 'A static single-page application built with Vue.js that presents SARL PRO and its company information. Fast to load, responsive, and focused on a clear company presentation.',
+    imageUrl: '/projects/sarlpro.png',
+    tags: ['Vue.js', 'SPA', 'Static Site', 'Responsive'],
+    liveUrl: 'https://sarlpro.com/',
+    githubUrl: '',
+    featured: false,
+    keyFeatures: [
+      'Built as a Vue.js single-page app',
+      'Static, fast-loading company website',
+      'Responsive presentation of the company'
     ],
     date: '2024'
   },
@@ -65,52 +138,18 @@ export const INITIAL_PROJECTS: Project[] = [
     title: 'Portage Store',
     category: 'web',
     categoryLabel: 'Web & E-Commerce',
-    summary: 'Modern e-commerce storefront with product catalog, cart, and order checkout.',
-    description: 'Portage Store is an online shopping platform featuring a product catalog, search and filtering, a shopping cart, and a streamlined checkout experience.',
+    summary: 'Robust e-commerce platform with a Laravel API and Next.js frontend, including client ordering, order tracking, and an admin dashboard.',
+    description: 'Portage Store is a full e-commerce platform built with a Laravel backend API and a Next.js frontend. Clients can order and track their orders, while the admin dashboard manages the website, orders, and stock. Fully responsive on phones.',
     imageUrl: '/projects/portage-store.png',
-    tags: ['E-Commerce', 'Web App', 'Storefront', 'Checkout'],
-    liveUrl: '',
+    tags: ['Laravel', 'Next.js', 'REST API', 'E-Commerce', 'Admin Dashboard'],
+    liveUrl: 'https://landing-six-jade.vercel.app/',
     githubUrl: '',
     featured: true,
     keyFeatures: [
-      'Product catalog with search and filtering',
-      'Shopping cart and checkout flow',
-      'Responsive storefront design'
-    ],
-    date: '2024'
-  },
-  {
-    id: 'excel-tool',
-    title: 'Excel Tool',
-    category: 'ai-data',
-    categoryLabel: 'Data Automation',
-    summary: 'Automation utility for processing, cleaning, and transforming spreadsheet data efficiently.',
-    description: 'Excel Tool automates repetitive spreadsheet work such as data cleaning, merging, formatting, and report generation, saving hours of manual processing.',
-    imageUrl: '/projects/excel-tool.png',
-    tags: ['Excel', 'Automation', 'Data Processing', 'Reporting'],
-    liveUrl: '',
-    githubUrl: '',
-    featured: false,
-    keyFeatures: [
-      'Automated data cleaning and transformation',
-      'Bulk spreadsheet processing',
-      'Consistent, repeatable report generation'
-    ],
-    date: '2024'
-  },
-  {
-    id: 'gda-mobile-app',
-    title: 'GDA Mobile App',
-    category: 'mobile',
-    categoryLabel: 'Mobile App',
-    summary: 'Cross-platform mobile companion app for the GDA platform, available on Android and iOS.',
-    description: 'GDA Mobile brings the GDA platform to phones and tablets, letting users manage their work and access key features on the go with a native mobile experience.',
-    imageUrl: '/projects/gda-mobile-app.png',
-    tags: ['Mobile App', 'Android', 'iOS', 'Cross-Platform'],
-    keyFeatures: [
-      'Native mobile experience on Android and iOS',
-      'Access to core GDA features on the go',
-      'Clean, touch-friendly interface'
+      'Client-side ordering and order tracking',
+      'Admin dashboard to manage website, orders, and stock',
+      'Laravel API backend with Next.js frontend',
+      'Fully responsive on phones'
     ],
     date: '2024'
   },
@@ -118,11 +157,11 @@ export const INITIAL_PROJECTS: Project[] = [
     id: 'card-scanner',
     title: 'Card Scanner',
     category: 'mobile',
-    categoryLabel: 'Mobile App',
-    summary: 'Mobile app that scans and digitizes business cards into organized contacts.',
-    description: 'Card Scanner uses the phone camera to capture business cards, extract contact details, and store them in a clean, searchable digital list.',
+    categoryLabel: 'Android App',
+    summary: 'Android app that scans and digitizes business cards into organized contacts.',
+    description: 'Card Scanner uses the phone camera to capture business cards, extract contact details, and store them in a clean, searchable digital list. Android only.',
     imageUrl: '/projects/card-scanner.png',
-    tags: ['Mobile App', 'Scanner', 'OCR', 'Contacts'],
+    tags: ['Android', 'Mobile App', 'Scanner', 'OCR'],
     keyFeatures: [
       'Camera-based business card scanning',
       'Automatic contact detail extraction',
@@ -134,11 +173,11 @@ export const INITIAL_PROJECTS: Project[] = [
     id: 'task-manager',
     title: 'Task Manager',
     category: 'mobile',
-    categoryLabel: 'Mobile App',
-    summary: 'Mobile productivity app for organizing tasks, setting priorities, and tracking progress.',
-    description: 'Task Manager helps users stay organized with task lists, priorities, and progress tracking in a simple, focused mobile interface.',
+    categoryLabel: 'Android App',
+    summary: 'Android productivity app for organizing tasks, setting priorities, and tracking progress.',
+    description: 'Task Manager helps users stay organized with task lists, priorities, and progress tracking in a simple, focused Android interface.',
     imageUrl: '/projects/task-manager.png',
-    tags: ['Mobile App', 'Productivity', 'Tasks', 'To-Do'],
+    tags: ['Android', 'Mobile App', 'Productivity', 'Tasks'],
     keyFeatures: [
       'Create and organize task lists',
       'Set priorities and deadlines',
@@ -247,7 +286,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: 'Frontend & Mobile',
     iconName: 'Smartphone',
     skills: [
-      { name: 'Flutter & Dart', level: 88, note: 'Multiplatform iOS & Android mobile applications' },
+      { name: 'Flutter & Dart', level: 88, note: 'Android mobile applications' },
       { name: 'React.js & TypeScript', level: 90, note: 'Modern SPAs, hooks, state management' },
       { name: 'HTML5 & CSS3 / Tailwind', level: 95, note: 'Responsive, mobile-first dark-mode layouts' },
       { name: 'JavaScript (ES6+)', level: 90, note: 'Asynchronous programming, event-driven UI' }
