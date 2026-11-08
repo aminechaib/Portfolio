@@ -97,7 +97,7 @@ export const ManageLinksModal: React.FC<ManageLinksModalProps> = ({
             : 'Web & SaaS',
         summary: formData.summary.trim() || 'Custom project application.',
         description: formData.summary.trim() || 'Custom project application.',
-        imageUrl: '/src/assets/images/project_parts_catalog_1794172493509.jpg',
+        imageUrl: '/projects/auto-dispatch.png',
         tags: tagsArray.length > 0 ? tagsArray : ['React', 'Web'],
         liveUrl: formData.liveUrl.trim() || undefined,
         githubUrl: formData.githubUrl.trim() || undefined,

@@ -18,7 +18,7 @@ import { MobileQuickBar } from './components/MobileQuickBar';
 import { INITIAL_PROJECTS } from './data/portfolioData';
 import { Project, SupportedLanguage } from './types/portfolio';
 
-const STORAGE_PROJECTS_KEY = 'amine_portfolio_projects';
+const STORAGE_PROJECTS_KEY = 'amine_portfolio_projects_v2';
 const STORAGE_LANG_KEY = 'amine_portfolio_lang';
 
 export default function App() {

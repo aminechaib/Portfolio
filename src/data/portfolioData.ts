@@ -23,159 +23,127 @@ export const PERSONAL_INFO = {
 
 export const INITIAL_PROJECTS: Project[] = [
   {
-    id: 'parts-matrix-db',
-    title: 'AutoParts Pro: Vehicle Compatibility Matrix & DB',
-    category: 'database',
-    categoryLabel: 'Database & Architecture',
-    summary: 'High-performance SQL relational catalog categorizing 50,000+ spare parts across multi-brand vehicle makes, models, and years.',
-    description: 'Designed and deployed an enterprise-grade database engine and web management console for an automotive spare parts distributor in Algiers. The system models cross-compatibility between hundreds of OEM manufacturers and vehicle trims with sub-50ms indexed query speeds.',
-    imageUrl: '/src/assets/images/project_parts_catalog_1794172493509.jpg',
-    tags: ['SQL', 'Database Schema', 'Laravel', 'React.js', 'ETL', 'Indexing'],
-    liveUrl: 'https://autoparts-matrix-demo.web.app',
-    githubUrl: 'https://github.com/amine-chaib/autoparts-matrix-engine',
+    id: 'auto-dispatch',
+    title: 'Auto Dispatch',
+    category: 'web',
+    categoryLabel: 'Web & Operations',
+    summary: 'Dispatch management web application for planning, assigning, and tracking deliveries in real time.',
+    description: 'A web-based dispatch platform that streamlines delivery planning and driver assignment. Centralizes orders, routes, and status updates so operations teams can coordinate shipments from a single dashboard.',
+    imageUrl: '/projects/auto-dispatch.png',
+    tags: ['Web App', 'Dispatch', 'Dashboard', 'Logistics'],
+    liveUrl: '',
+    githubUrl: '',
     featured: true,
-    metrics: [
-      { label: 'Parts Cataloged', value: '50,000+' },
-      { label: 'Query Latency', value: '< 45ms' },
-      { label: 'Data Accuracy', value: '99.9%' }
-    ],
     keyFeatures: [
-      'Multi-tier vehicle compatibility taxonomy (Make, Model, Year, Engine code, VIN range)',
-      'Sub-second SQL indexing and query cache for high-concurrency parts search',
-      'Automated data cleansing, deduplication, and mass CSV/Excel import pipeline',
-      'Bi-directional synchronization between local inventory ERP and e-commerce platforms'
+      'Central dispatch dashboard for orders and driver assignment',
+      'Real-time delivery status tracking',
+      'Organized route and shipment planning'
     ],
-    architecture: 'PostgreSQL / MariaDB partitioned schema, Laravel REST API layer, Tailwind & React front-end management grid.',
-    date: '2024 - Present'
-  },
-  {
-    id: 'flexilog-mobile',
-    title: 'FlexiLog: Flutter Cross-Platform Warehouse & Barcode App',
-    category: 'mobile',
-    categoryLabel: 'Mobile App (Flutter)',
-    summary: 'Cross-platform mobile application for warehouse logistics, rapid barcode scanning, stock intake, and order fulfillment.',
-    description: 'Built with Flutter for iOS and Android, FlexiLog empowers warehouse staff to scan incoming shipments, reconcile vendor packing slips against pro-forma invoices, update real-time shelf locations, and operate seamlessly in low-connectivity warehouse environments with offline local SQLite caching.',
-    imageUrl: '/src/assets/images/project_flutter_mobile_1794172493084.jpg',
-    tags: ['Flutter', 'Dart', 'Mobile iOS/Android', 'Barcode Scanner', 'SQLite', 'REST API'],
-    liveUrl: 'https://flexilog-warehouse.app',
-    githubUrl: 'https://github.com/amine-chaib/flexilog-flutter-app',
-    featured: true,
-    metrics: [
-      { label: 'Scan Time', value: '0.2s' },
-      { label: 'Offline Support', value: '100%' },
-      { label: 'Platform Support', value: 'iOS & Android' }
-    ],
-    keyFeatures: [
-      'High-speed camera barcode & QR reader with instant vibration haptic feedback',
-      'Offline-first architecture with local SQLite queue and automatic server sync upon Wi-Fi reconnect',
-      'Multi-warehouse bin and shelf location routing with interactive pick-lists',
-      'Direct receipt printing and dispatch invoice generation'
-    ],
-    architecture: 'Flutter (Dart) client, Provider state management, SQLite local caching, Laravel REST backend.',
     date: '2024'
   },
   {
-    id: 'atlas-predictive-analytics',
-    title: 'Atlas: Predictive Sales & Supply Chain Analytics Hub',
-    category: 'ai-data',
-    categoryLabel: 'AI & Data Analytics',
-    summary: 'Automated Python & SQL analytics suite predicting inventory turnover, lead times, and seasonal demand variations.',
-    description: 'An executive analytics platform built with Python, SQL, and modern data visualization dashboards. Extracts transaction history to identify sales velocity, calculates safety stock thresholds, forecasts maritime shipping lead times, and automatically generates monthly PDF reports for management.',
-    imageUrl: '/src/assets/images/project_ai_analytics_1794172493907.jpg',
-    tags: ['Python', 'SQL', 'Predictive Modeling', 'Data Analysis', 'Excel VBA', 'Dashboards'],
-    liveUrl: 'https://atlas-analytics-platform.cloud',
-    githubUrl: 'https://github.com/amine-chaib/atlas-predictive-analytics',
-    featured: true,
-    metrics: [
-      { label: 'Forecast Accuracy', value: '93.5%' },
-      { label: 'Stockouts Prevented', value: '-38%' },
-      { label: 'Reports Automated', value: 'Weekly / Monthly' }
-    ],
-    keyFeatures: [
-      'Automated ETL data extraction pipelines pulling directly from relational operational databases',
-      'Demand forecasting algorithms based on historical seasonal cycles and vehicle repair frequencies',
-      'Lead-time tracking for international freight booking from initial order to customs release',
-      'Exportable executive summaries in interactive HTML, Excel pivot, and formatted PDF formats'
-    ],
-    architecture: 'Python (Pandas, NumPy, Scikit-learn), FastAPI microservice, React charts, automated cron pipelines.',
-    date: '2024'
-  },
-  {
-    id: 'autocomponents-b2b',
-    title: 'AutoComponents B2B: High-Load E-Commerce Storefront',
+    id: 'gda-web',
+    title: 'GDA Web',
     category: 'web',
     categoryLabel: 'Web & SaaS',
-    summary: 'Responsive B2B e-commerce platform with instant faceted filter, real-time stock sync, and pro-forma invoice generator.',
-    description: 'A modern web application built for business-to-business transactions in automotive spare parts. Features dynamic multi-filter facet search (by vehicle brand, chassis type, OEM reference, and price range), wholesale quantity pricing tiers, and automated pro-forma quote generation.',
-    imageUrl: '/src/assets/images/project_ecommerce_hub_1794172494498.jpg',
-    tags: ['React.js', 'Tailwind CSS', 'PHP', 'Laravel', 'REST API', 'Faceted Search'],
-    liveUrl: 'https://autocomponents-b2b-store.com',
-    githubUrl: 'https://github.com/amine-chaib/autocomponents-b2b-store',
+    summary: 'Full-featured web platform for managing business operations and day-to-day workflows.',
+    description: 'GDA Web is a responsive management platform built to handle core business operations through a clean, modern interface. It brings records, workflows, and reporting together in one place.',
+    imageUrl: '/projects/gda-web.png',
+    tags: ['Web App', 'Management', 'Dashboard', 'SaaS'],
+    liveUrl: '',
+    githubUrl: '',
     featured: true,
-    metrics: [
-      { label: 'SKUs Listed', value: '30,000+' },
-      { label: 'Filter Speed', value: 'Instant' },
-      { label: 'B2B Client Quotes', value: '1,200+' }
-    ],
     keyFeatures: [
-      'Instant facet filtering across brands (Bosch, Brembo, Continental, Denso, Moog)',
-      'Direct order quote drafting and instantaneous pro-forma generation for banking approval',
-      'Real-time inventory lookup against central warehouse database',
-      'Responsive design strictly tuned for both desktop and mobile field technicians'
+      'Centralized business management dashboard',
+      'Responsive layout for desktop and tablet',
+      'Structured records and workflow management'
     ],
-    architecture: 'React 19 SPA, Tailwind CSS v4, Laravel API, Redis session cache, PostgreSQL storage.',
-    date: '2023 - 2024'
-  },
-  {
-    id: 'maritime-import-tracker',
-    title: 'LogiFlow: Maritime Import & Customs Booking Tracker',
-    category: 'database',
-    categoryLabel: 'Logistics & Supply Chain',
-    summary: 'End-to-end supply chain compliance software managing ALGEX pre-domiciliation, container bookings, and customs.',
-    description: 'Custom internal portal streamlining the entire international procurement cycle from overseas vendor orders to warehouse delivery. Manages commercial documentation, pro-forma approvals with ALGEX, maritime container space booking optimization, and customs clearance milestones.',
-    imageUrl: '/src/assets/images/project_parts_catalog_1794172493509.jpg',
-    tags: ['SQL', 'Process Automation', 'Supply Chain', 'ALGEX & Customs', 'PHP'],
-    liveUrl: 'https://logiflow-import-tracker.dev',
-    githubUrl: 'https://github.com/amine-chaib/logiflow-maritime-tracker',
-    featured: false,
-    metrics: [
-      { label: 'Containers Tracked', value: '120+' },
-      { label: 'Clearance Time', value: '-25% Delay' },
-      { label: 'Audit Compliance', value: '100%' }
-    ],
-    keyFeatures: [
-      'Document tracking checklist (Bill of Lading, Packing List, Commercial Invoice, Certificate of Origin)',
-      'Automated milestone alerts for banking pre-domiciliation and customs broker handoffs',
-      'Container loading optimizer calculating CBM volume vs payload weight',
-      'Real-time vessel tracking notifications'
-    ],
-    architecture: 'Relational database schema, PHP backend, responsive web console with dark-mode analytics.',
     date: '2024'
   },
   {
-    id: 'ai-invoice-extractor',
-    title: 'DocuParse AI: Intelligent Invoicing & Packing List OCR',
-    category: 'ai-data',
-    categoryLabel: 'AI & Data Analytics',
-    summary: 'Automated AI document parsing tool extracting line items from vendor invoices directly into relational SQL tables.',
-    description: 'An AI-powered document processing pipeline utilizing Gemini AI & OCR to extract part numbers, unit prices, HS customs codes, and quantities from multilingual foreign invoices (English, French, Chinese) and inject structured data directly into the central inventory database.',
-    imageUrl: '/src/assets/images/project_ai_analytics_1794172493907.jpg',
-    tags: ['Python', 'Gemini AI API', 'OCR', 'FastAPI', 'Data Extraction'],
-    liveUrl: 'https://docuparse-ai.online',
-    githubUrl: 'https://github.com/amine-chaib/docuparse-ai-invoices',
-    featured: false,
-    metrics: [
-      { label: 'Data Entry Time', value: '90% faster' },
-      { label: 'Extraction Accuracy', value: '98.7%' },
-      { label: 'Languages', value: 'FR / EN / CN' }
-    ],
+    id: 'portage-store',
+    title: 'Portage Store',
+    category: 'web',
+    categoryLabel: 'Web & E-Commerce',
+    summary: 'Modern e-commerce storefront with product catalog, cart, and order checkout.',
+    description: 'Portage Store is an online shopping platform featuring a product catalog, search and filtering, a shopping cart, and a streamlined checkout experience.',
+    imageUrl: '/projects/portage-store.png',
+    tags: ['E-Commerce', 'Web App', 'Storefront', 'Checkout'],
+    liveUrl: '',
+    githubUrl: '',
+    featured: true,
     keyFeatures: [
-      'Multi-page PDF parsing with automated tabular line item detection',
-      'Automated reconciliation against purchasing orders and currency conversion rates',
-      'Direct SQL table insertion with human-in-the-loop validation interface',
-      'Zero manual typing for large shipments of 500+ line items'
+      'Product catalog with search and filtering',
+      'Shopping cart and checkout flow',
+      'Responsive storefront design'
     ],
-    architecture: 'Python, Google Gemini API, PyMuPDF, FastAPI, React review UI.',
+    date: '2024'
+  },
+  {
+    id: 'excel-tool',
+    title: 'Excel Tool',
+    category: 'ai-data',
+    categoryLabel: 'Data Automation',
+    summary: 'Automation utility for processing, cleaning, and transforming spreadsheet data efficiently.',
+    description: 'Excel Tool automates repetitive spreadsheet work such as data cleaning, merging, formatting, and report generation, saving hours of manual processing.',
+    imageUrl: '/projects/excel-tool.png',
+    tags: ['Excel', 'Automation', 'Data Processing', 'Reporting'],
+    liveUrl: '',
+    githubUrl: '',
+    featured: false,
+    keyFeatures: [
+      'Automated data cleaning and transformation',
+      'Bulk spreadsheet processing',
+      'Consistent, repeatable report generation'
+    ],
+    date: '2024'
+  },
+  {
+    id: 'gda-mobile-app',
+    title: 'GDA Mobile App',
+    category: 'mobile',
+    categoryLabel: 'Mobile App',
+    summary: 'Cross-platform mobile companion app for the GDA platform, available on Android and iOS.',
+    description: 'GDA Mobile brings the GDA platform to phones and tablets, letting users manage their work and access key features on the go with a native mobile experience.',
+    imageUrl: '/projects/gda-mobile-app.png',
+    tags: ['Mobile App', 'Android', 'iOS', 'Cross-Platform'],
+    keyFeatures: [
+      'Native mobile experience on Android and iOS',
+      'Access to core GDA features on the go',
+      'Clean, touch-friendly interface'
+    ],
+    date: '2024'
+  },
+  {
+    id: 'card-scanner',
+    title: 'Card Scanner',
+    category: 'mobile',
+    categoryLabel: 'Mobile App',
+    summary: 'Mobile app that scans and digitizes business cards into organized contacts.',
+    description: 'Card Scanner uses the phone camera to capture business cards, extract contact details, and store them in a clean, searchable digital list.',
+    imageUrl: '/projects/card-scanner.png',
+    tags: ['Mobile App', 'Scanner', 'OCR', 'Contacts'],
+    keyFeatures: [
+      'Camera-based business card scanning',
+      'Automatic contact detail extraction',
+      'Organized, searchable contact list'
+    ],
+    date: '2024'
+  },
+  {
+    id: 'task-manager',
+    title: 'Task Manager',
+    category: 'mobile',
+    categoryLabel: 'Mobile App',
+    summary: 'Mobile productivity app for organizing tasks, setting priorities, and tracking progress.',
+    description: 'Task Manager helps users stay organized with task lists, priorities, and progress tracking in a simple, focused mobile interface.',
+    imageUrl: '/projects/task-manager.png',
+    tags: ['Mobile App', 'Productivity', 'Tasks', 'To-Do'],
+    keyFeatures: [
+      'Create and organize task lists',
+      'Set priorities and deadlines',
+      'Track progress and completed tasks'
+    ],
     date: '2024'
   }
 ];
