@@ -76,25 +76,31 @@ export const INITIAL_PROJECTS: Project[] = [
     ],
     date: '2026'
   },
+
   {
-    id: 'auto-dispatch',
-    title: 'Auto Dispatch',
+    id: 'client-activity-dashboard',
+    title: 'Client Activity Analytics Dashboard',
     category: 'ai-data',
     categoryLabel: 'Data & Operations',
-    summary: 'Allocates quantities and articles between clients by order variety and client rank when arrival stock cannot fulfill the global order.',
-    description: 'Auto Dispatch helps distribute quantities and articles between clients when the arrival does not have enough stock to fulfill the global order. It uses the variety of each order and the client rank to decide allocation, making shortages faster and fairer to dispatch.',
-    imageUrl: '/projects/auto-dispatch.png',
-    tags: ['Python', 'Streamlit', 'Dispatch', 'Allocation', 'Data Analysis'],
-    liveUrl: 'https://ac-partagepro.streamlit.app/',
+    summary: 'Analyzes client activity based on sales orders or invoices, tracking yearly and monthly transactions, client performance, and revenue.',
+    description: 'Client Activity Analytics Dashboard transforms Excel order or invoice data into interactive business insights. It provides an overview of client activity, invoice volumes, yearly and monthly trends, and chiffre d’affaires. Users can map their Excel columns, filter results by year and client, identify top-performing customers, and export analytical reports.',
+    imageUrl: '/projects/client-activity-dashboard.png',
+    tags: ['Python', 'Streamlit', 'Pandas', 'Plotly', 'Excel', 'Data Analytics'],
+    liveUrl: 'https://partagesarlprogit-dlbtkftpivvksvxtmyxezv.streamlit.app/',
     githubUrl: '',
     featured: true,
     keyFeatures: [
-      'Allocates quantities and articles between clients',
-      'Uses order variety and client rank for prioritization',
-      'Handles arrivals that cannot fulfill the full order'
+      'Imports and analyzes Excel orders or invoice records',
+      'Flexible Excel column mapping',
+      'Tracks client activity and invoice volumes by year',
+      'Visualizes monthly transaction trends',
+      'Calculates client revenue and identifies top customers',
+      'Filters analytics by year and client',
+      'Exports client summaries and analytical reports to Excel'
     ],
     date: '2024'
   },
+
   {
     id: 'excel-tool',
     title: 'Excel Tool',
