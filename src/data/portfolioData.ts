@@ -2,9 +2,9 @@ import { Project, ExperienceItem, EducationItem, SkillCategory } from '../types/
 
 export const PERSONAL_INFO = {
   name: 'Amine CHAÏB',
-  title: 'Full-Stack Developer & Data Systems Engineer',
-  roleFr: 'Développeur Full-Stack & Ingénieur Systèmes de Données',
-  roleAr: 'مطور برمجيات متكامل ومهندس نظم بيانات',
+  title: 'Full-Stack Developer',
+  roleFr: 'Développeur Full-Stack',
+  roleAr: 'مطور برمجيات متكامل',
   email: 'ccamine4@gmail.com',
   phone: '0675 56 10 07',
   phoneFormatted: '+213 675 56 10 07',
@@ -15,9 +15,9 @@ export const PERSONAL_INFO = {
   githubProfile: 'https://github.com/amine-chaib',
   linkedinProfile: 'https://linkedin.com/in/amine-chaib',
   about: {
-    en: 'Versatile tech professional specialized in relational database engineering, data analytics, modern web & mobile development (React, Flutter, Laravel, Python). Proven track record managing mission-critical inventory databases, optimizing supply-chain logistics, and building high-performance e-commerce integrations.',
+    en: 'Versatile tech professional specialized in relational database, data analytics, modern web & mobile development (React, Flutter, Laravel, Python). Proven track record managing mission-critical inventory databases, optimizing supply-chain logistics, and building high-performance e-commerce integrations.',
     fr: 'Professionnel polyvalent disposant d’une solide expérience en gestion et modélisation de bases de données, analyse de données, développement web & mobile moderne (React, Flutter, Laravel, Python). Expertise avérée dans l’optimisation des flux logistiques, le dédouanement international et les intégrations e-commerce.',
-    ar: 'مهندس برمجيات ونظم بيانات متعدد المهارات، متخصص في هندسة قواعد البيانات العلائقية، تحليل البيانات، وتطوير تطبيقات الويب والهاتف المحمول (React، Flutter، Laravel، Python). خبرة مؤكدة في إدارة سلاسل الإمداد، الاستيراد، وتطوير منصات التجارة الإلكترونية.'
+    ar: 'متعدد المهارات، متخصص في قواعد البيانات العلائقية، تحليل البيانات، وتطوير تطبيقات الويب والهاتف المحمول (React، Flutter، Laravel، Python). خبرة مؤكدة في إدارة سلاسل الإمداد، الاستيراد، وتطوير منصات التجارة الإلكترونية.'
   }
 };
 

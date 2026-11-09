@@ -122,7 +122,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
       badge: 'Available for New Challenges',
       greeting: "Hello, I'm",
       name: 'Amine CHAÏB',
-      title: 'Full-Stack Developer & Data Systems Engineer',
+      title: 'Full-Stack Developer',
       lead: 'Specialized in robust relational database systems, high-performance web & mobile applications (React, Flutter, Laravel), and intelligent data analytics. Bridging operational logistics with cutting-edge software architecture.',
       viewProjects: 'Explore Apps & Projects',
       downloadResume: 'Download Resume (PDF)',
@@ -137,7 +137,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     },
     projects: {
       title: 'Featured Apps & Software Projects',
-      kicker: 'Engineering Portfolio',
+      kicker: 'Portfolio',
       subtitle: 'Production web platforms, cross-platform mobile apps, and relational data architecture built for real-world enterprise operations.',
       all: 'All Projects',
       web: 'Web & SaaS',
@@ -153,7 +153,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     resume: {
       title: 'Professional Experience & Credentials',
       kicker: 'Curriculum Vitae',
-      subtitle: 'Verified track record across database R&D, international procurement, software engineering, and data-driven decision making.',
+      subtitle: 'Verified track record across database R&D, international procurement, and data-driven decision making.',
       downloadPdf: 'Download Original CV (PDF)',
       viewPdfModal: 'Interactive PDF Preview',
       tabs: {
@@ -168,7 +168,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     skills: {
       title: 'Technical & Operational Mastery',
       kicker: 'Core Competencies',
-      subtitle: 'A versatile toolkit combining backend engineering, complex database design, modern frontend and cross-platform mobile development.'
+      subtitle: 'A versatile toolkit combining complex database design, modern frontend and cross-platform mobile development.'
     },
     contact: {
       title: "Let's Collaborate on Your Next Project",
@@ -228,7 +228,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
       badge: 'Disponible pour de nouveaux défis',
       greeting: 'Bonjour, je suis',
       name: 'Amine CHAÏB',
-      title: 'Développeur Full-Stack & Ingénieur Systèmes de Données',
+      title: 'Développeur Full-Stack',
       lead: 'Spécialisé dans les bases de données relationnelles complexes, le développement web & mobile moderne (React, Flutter, Laravel) et l’analyse décisionnelle. Alliant rigueur opérationnelle et architectures logicielles performantes.',
       viewProjects: 'Voir mes applications & projets',
       downloadResume: 'Télécharger mon CV (PDF)',
@@ -274,7 +274,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     skills: {
       title: 'Maîtrise Technique & Opérationnelle',
       kicker: 'Compétences Clés',
-      subtitle: 'Un profil polyvalent conjuguant ingénierie backend, optimisation SQL, développement mobile réactif et analyse statistique.'
+      subtitle: 'Un profil polyvalent conjuguant optimisation SQL, développement mobile réactif et analyse statistique.'
     },
     contact: {
       title: 'Contactez-moi pour Vos Projets',
@@ -334,7 +334,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
       badge: 'متاح للفرص والمشاريع الجديدة',
       greeting: 'مرحباً، أنا',
       name: 'أمين شايب',
-      title: 'مطور برمجيات متكامل ومهندس نظم بيانات',
+      title: 'مطور برمجيات متكامل',
       lead: 'متخصص في نظم قواعد البيانات العلائقية المعقدة، تطوير تطبيقات الويب والهاتف المحمول الحديثة (React، Flutter، Laravel) والتحليلات البيانية الذكية.',
       viewProjects: 'استعراض التطبيقات والمشاريع',
       downloadResume: 'تحميل السيرة الذاتية (PDF)',
@@ -380,7 +380,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     skills: {
       title: 'الكفاءات التقنية والعملياتية',
       kicker: 'المهارات الأساسية',
-      subtitle: 'مجموعة شاملة تجمع بين هندسة الخوادم، ضبط أداء قواعد البيانات، وتطوير واجهات المستخدم والهاتف.'
+      subtitle: 'مجموعة شاملة تجمع بين ضبط أداء قواعد البيانات، وتطوير واجهات المستخدم والهاتف.'
     },
     contact: {
       title: 'تواصل معي لبدء التعاون',
