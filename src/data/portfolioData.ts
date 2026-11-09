@@ -79,7 +79,7 @@ export const INITIAL_PROJECTS: Project[] = [
 
   {
     id: 'client-activity-dashboard',
-    title: 'Client Activity Analytics Dashboard',
+    title: 'Client Activity Dashboard',
     category: 'ai-data',
     categoryLabel: 'Data & Operations',
     summary: 'Analyzes client activity based on sales orders or invoices, tracking yearly and monthly transactions, client performance, and revenue.',
